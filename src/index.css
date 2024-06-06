@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply font-sans;
+  }
+
+  h1 {
+    @apply font-bold text-lg text-center;
+  }
+  h2 {
+    @apply font-bold text-base text-center;
+  }
+  h3 {
+    @apply font-bold text-sm text-start;
+  }
+  .message {
+    @apply text-red-800 text-sm;
+  }
+  .btn__menu {
+    @apply rounded-lg w-full [&>svg]:text-purple-light  [&>svg]:hover:text-white hover:bg-purple-light py-2 my-1 hover:text-white pl-4 text-start;
+  }
+  .bnt__primary {
+    @apply rounded-lg w-fit text-white bg-purple-dark  hover:text-white hover:bg-purple-light p-2 text-center;
+  }
+  .btn__reportes {
+    @apply w-60 text-white bg-purple-dark  hover:text-white hover:bg-purple-light p-2 text-center;
+  }
+  .bnt__danger {
+    @apply rounded-lg w-fit text-white bg-red-900  hover:text-white hover:bg-red-700 p-2    text-center;
+  }
+  .input__form {
+    @apply bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 my-2;
+  }
+  .input__mostrar {
+    @apply bg-gray-200 border-none  outline-none rounded text-xs font-medium leading-none text-gray-800 py-3 w-full my-2;
+  }
+  .select {
+    @apply bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-96 pl-3 my-2;
+  }
+  .select__table {
+    @apply bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 my-2;
+  }
+  .label__form {
+    @apply text-sm font-medium leading-none text-gray-800;
+  }
+  .table {
+    border: 1px solid #424242;
+  }
+  .btn__menu__active {
+    @apply rounded-lg w-full [&>svg]:text-white bg-purple-light  [&>svg]:hover:text-white hover:bg-purple-light py-2 my-1 hover:text-white pl-4 text-start;
+  }
+  .container__table {
+    @apply h-full overflow-y-auto snap-y shadow-sm shadow-black rounded-sm;
+  }
+
+  .cardList {
+    @apply w-[400px] h-[318px] text-black font-bold overflow-y-auto;
+  }
+  .barStyle {
+    @apply w-[580px] h-[250px] text-black rounded-xl font-bold;
+  }
+  .row-strike-through {
+    background-color: #f9a8a8; /* Color de fondo rojo */
+  }
+
+  .ventasGraf {
+    @apply w-[200px] h-[318px] text-black font-bold;
+  }
+  .w-px {
+    width: 2000px; /* Initial width in pixels */
+    resize: horizontal; /* Allow horizontal resizing */
+    overflow: auto; /* Add scrollbar when content overflows */
+  }
+
+  .h-11-12 {
+    height: 93%;
+  }
+  .icon-green {
+    color: #66a182;
+  }
+}
